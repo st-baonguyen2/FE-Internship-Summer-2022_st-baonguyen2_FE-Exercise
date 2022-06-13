@@ -60,11 +60,11 @@ html {
     font-family: "poppins", sans-serif;
 }
 .container {
-    position: relative;
-    padding: 0 144px;
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 .btn {
-    /* position: absolute; */
     width: 166px;
     height: 48px;
     border-radius: 33px;
@@ -74,11 +74,20 @@ html {
     font-size: 13px;
     line-height: 19.5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 .row {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     width: 100%;
+    margin: 0 -10px;
+}
+.row > * {
+  padding: 0px 10px;
 }
 .col-3 {
     width: calc(100%/4);
@@ -88,6 +97,13 @@ html {
 }
 .col-2 {
     width: calc(100%/6);
+}
+.badge {
+    
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: red;
+    color: var(--white);
 }
 
 header {
@@ -107,24 +123,24 @@ header {
     display: flex;
     gap: 100px;
 }
-
+.menu-item a{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+.hover-logo:hover{
+    transform: scale(1.2);
+}
 .logo-title {
     display: flex;
     font-size: 19px;
     color: var(--white);
     align-items: center;
     gap: 20px;
+    transition: 0.5s;
 }
 
-
-.link-item {
-    font-size: 18px;
-    font-weight: 700;
-}
-.link-item a {
-    color: #FBB03B;
-    cursor: pointer;
-}
 .header-list-icon {
     display: flex;
     gap: 24px;
@@ -132,21 +148,21 @@ header {
 .section-banner {
     width: 100%;
     height: 800px;
+    margin-bottom: 95px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5)), url(img/Fashion-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.section-banner {
-    display: block;
-    width: 100%;
-}
+
 
 .banner-title {
     position: absolute;
     top: 222px;
     left: 240px;
+    
 }
 .banner-title h2 {
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 72px;
     line-height: 1.01;
@@ -158,7 +174,6 @@ header {
 }
 .banner-link {
     display: flex;
-    padding-top: 24px;
     align-items: center;
     gap: 21px;
 }
@@ -181,7 +196,7 @@ header {
 .policy { 
     position: absolute;
     height: 125px;
-    width: 1100px;
+    width: 75%;
     top: 675px;
     left: 0;
     border-radius: 0 70px 0px 0px;
@@ -190,13 +205,15 @@ header {
 }
 .policy-list {
     display: flex;
-    padding-left: 240px;
+    justify-content: flex-end;
     padding-top: 38px;
+    padding-right: 90px;
+    gap: 40px;
 }
 .policy-item {
     display: flex;
     gap: 21px;
-    /* align-items: center; */
+    width: 250px;
 }
 .policy-icon {
     display: flex;
@@ -221,11 +238,10 @@ header {
 }
 .section-collection {
     position: relative;
-    padding-top: 48px;
+    margin-bottom: 95px;
 }
 .collection-list {
     position: relative;
-    gap: 20px;
 }
 .collection-item { 
     position: relative;
@@ -247,12 +263,12 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
-
 .collection-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -271,14 +287,21 @@ header {
     top: 258px;
     left: 40px;
 }
-.badge-promotion {
+.btn-more{
+    width: 122px;
+    height: 48px;
+    border-radius: 24px;
+}
+.btn-view{
+    width: 100px;
+    height: 48px;
+    border-radius: 24px;
+}
+.badge-collection {
     position: absolute;
-    top: 135px;
-    left: 40px;
-    border-radius: 20px;
-    padding: 6px 10px;
-    background-color: red;
-    color: var(--white);
+    top: 130px;
+    left: 30px;
+   
 }
 .collection-title span {
     display: block;
@@ -286,25 +309,26 @@ header {
 }
 .section-products {
     position: relative;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 .products-header {
     display: flex;
-    padding-top: 95px;
-    padding-bottom: 39px;
+    margin-bottom: 39px;
     justify-content: space-between;
-}
-.products {
-    position: relative;
-    width: 100%;
 }
 .products-list {
     position: relative;
     width: 100%;
-    gap: 20px;
-    
 }
-
+.products-image {
+    display: flex;
+    margin-bottom: 16px;
+}
+.badge-promotion{
+    position: absolute;
+    top: 24px;
+    left:18px;
+}
 .products-image img {
     width: 100%;
     height: 100%;
@@ -315,24 +339,21 @@ header {
     line-height: 48px;
 }
 .btn-show {
+    width: 143px;
+    height: 49px;
+    border-radius: 39px;
     border: 1px solid black;
 }
-.badge {
-    top: 24px;
-    left:18px;
-}
-.products-card {
+.products-cost{
     display: flex;
-    align-items: flex-end;
-    line-height: 1.5;
+    justify-content: space-between;
+    align-items: center;
 }
-.products-infor {
-    padding-top: 15px;
-}
-.products-name {
+.name-text {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    color: var(--black);
 }
 .products-price {
     font-weight: 400;
@@ -342,44 +363,34 @@ header {
 .promotion {
     color: red;
 }
-.produc-card {
-    display: flex;
-    justify-content: space-between;
-}
-.products-cost {
-    display: flex;
-    padding-top:32px;
+.cost-text {
     color: #CECECE;
-    justify-items: flex-end;
 }
 .section-offer {
     position: relative;
+    padding-bottom: 54px;
+    padding-top: 48px;
+    margin-bottom: 48px;
     width: 100%;
     background-color: #F7F7F7;;
 }
-.offer-list {
-    gap: 50px;
-}
 .title {
-    padding-top: 48px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .offer-icon {
     display: flex;
     width: 68px;
     height: 68px;
+    margin-bottom: 46px;
     border-radius: 10px;
     background-color: var(--white);
     align-items: center;
     justify-content: center;
 
 }
-.offer-card { 
-    padding-top: 46px;
-}
 .offer-title {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -388,39 +399,33 @@ header {
     color: var(--primary-color);
 }
 .offer-content {
-    padding-bottom: 54px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
 }
 .products-title {
-    padding-top: 48px;
-    padding-bottom: 39px;
+    margin-bottom: 39px;
     text-align: center;
+}
+.section-subcribe {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url(img/bg_form.png);
 }
 .section-subcribe::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #000000 33.28%, rgba(0, 0, 0, 0) 94.05%);
     opacity: 0.7;
 }
 
-.section-subcribe {
-    position: relative;
-    width: 100%;
-    /* background: linear-gradient(90deg, #000000 33.28%, rgba(0, 0, 0, 0) 94.05%); */
-    background-image: url(img/bg_form.png);
-}
+
 .section-form {
-    display: flex;
-    padding: 85px 0px;
-    text-align: center;
+    position: relative;
+    height: 200px;
     align-items: center;
 }
 .form-text {
@@ -431,11 +436,18 @@ header {
     text-align: left;
    
 }
+form {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-secondary:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
 .form-input {
     width: 351px;
     height: 47px;
     padding: 13px 24px;
-    margin-right: 40px;
     border-radius: 56px;
     border: none;
     font-weight: 400;
@@ -449,23 +461,23 @@ header {
 }
 footer {
     position: relative;
+    padding-top: 40px;
     width: 100%;
     background-color: var(--primary-color);
-    color: var(--white);
 }
-.footer-list {
-    padding-top: 40px;
-}
-.footer- {
-    width: 373px;
-    padding-top: 24px;
+.footer-text{
+    width: 80% ;
+    margin-bottom: 57px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    color: var(--white);
+}
+.space{
+    margin-bottom: 24px;
 }
 .social-network-list {
     display: flex;
-    padding: 57px 0 62px 0;
     gap: 33px;
 }
 .link-item {
@@ -474,7 +486,7 @@ footer {
     color: var(--white);
 }
 .item-title {
-    padding-bottom: 19px;
+    margin-bottom: 19px;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -483,7 +495,7 @@ footer {
     color: var(--white);
 }
 .link-text {
-    padding-bottom: 19px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -492,13 +504,20 @@ footer {
     color: var(--white);
 }
 .footer {
-    padding-top:24px;
+    display: flex;
+    height: 70px;
+    align-items: center;
     border-top: 1px solid var(--white);
 }
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+}
 .copy-right {
-    padding-bottom: 24px;
+    display: flex;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    text-align: center;
+    justify-content: center;
+    color: var(--white);
 }
