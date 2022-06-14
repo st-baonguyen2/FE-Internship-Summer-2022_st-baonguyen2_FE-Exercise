@@ -218,8 +218,7 @@ header {
     height: 125px;
     width: 75%;
     top: 675px;
-    left: auto;
-    right: calc((100% - 1150px ) / 2 + 196px );
+    left: 0;
     border-radius: 0 70px 0px 0px;
     background-color: var(--white);
     z-index: 2; 
