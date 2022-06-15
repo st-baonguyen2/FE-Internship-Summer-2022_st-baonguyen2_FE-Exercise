@@ -15,15 +15,8 @@ padding: 0px 10px;
 .col-2 {
   width: calc(100%/6);
 }
-.container {
-  width: 1160px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+
 @media all and (max-width:768px){
-  .container{
-    width: 100%;
-  }
   .row{
     margin: 0;
     display: flex;

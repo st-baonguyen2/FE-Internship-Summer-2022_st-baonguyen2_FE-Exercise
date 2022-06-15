@@ -56,5 +56,11 @@
       background-color:map-get($color, whitee);
       color: map-get($color,blackk )
     }
+    &-secondary{
+      padding: 7px 18px;
+      font-weight: map-get($font-weight , font-bold );
+      font-size: map-get($font-size, font-sm );
+      line-height: 19.5px;
+    }
   }
 }

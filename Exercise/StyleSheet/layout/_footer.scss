@@ -1,8 +1,10 @@
 footer {
   position: relative;
-  padding-top: 40px;
   width: 100%;
   background-color: map-get($color,primary);
+  .footer-heading {
+    padding: 40px 0;
+  }
   .space{
     margin-bottom: 24px;
   }
@@ -55,4 +57,48 @@ footer {
     color: map-get($color,whitee );
   }
 }
-
+//--------------------------------------reponsive---------------------------------------------
+@media all and (max-width:768px){
+  footer {
+  .footer-heading {
+    padding: 24px 0;
+  }
+  .space{
+    margin-bottom: 24px;
+  }
+  .footer-text{
+    width: 100% ;
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+}
+.social-network-list {
+  display: none;
+  }
+.footer-list {
+  display: block;
+  padding-bottom: 24px;
+  .item-title {
+    margin-bottom: 16px;
+    font-weight: map-get($font-weight ,font-bold );
+    font-size: map-get($font-size, font-lg );
+    line-height: 24px;
+  }
+  .link-text {
+    margin-bottom: 12px;
+    & a {
+      font-weight: map-get($font-weight ,font-light );
+      font-size: map-get($font-size, font-xs );
+      line-height: 18px;
+    }
+  }
+}
+.footer {
+  padding: 24px 0;
+  height: 0;
+  
+}
+}
