@@ -122,6 +122,9 @@ html {
     padding: 6px 10px;
     background-color: var(--secondary-color);
     color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
 }
 header {
     position: absolute;
@@ -164,7 +167,7 @@ header {
   position: relative;
   width: 100%;
   height: 800px;
-  margin-bottom: 95px;
+  margin-bottom: 48px;
   background-image: url(img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,8 +182,7 @@ header {
 }
 .banner-title {
     position: absolute;
-    top: 222px;
-    left: 240px;    
+    padding-top: 222px;
     z-index: 2;
 }
 .banner-title h2 {
@@ -228,6 +230,7 @@ header {
   padding-top: 40px;
   padding-right: 45px;
   justify-content: flex-end;
+  gap:30px
 }
 .policy-item {
   display: flex;
@@ -263,11 +266,9 @@ header {
 }
 .section-collection {
     position: relative;
-    margin-bottom: 95px;
+    padding-bottom: 48px;
 }
-.collection-list {
-    position: relative;
-}
+
 .collection-item { 
     position: relative;
 }
@@ -276,10 +277,6 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background:var(--black);
     opacity: 0.5;
 }
@@ -311,7 +308,7 @@ header {
 }
 .badge-collection {
     position: absolute;
-    top: 130px;
+    top: 122px;
     left: 30px;  
 }
 .collection-title span {
@@ -320,6 +317,7 @@ header {
 }
 .section-product {
     position: relative;
+    padding-top: 48px;
     margin-bottom: 60px;
 }
 .product-header {
@@ -341,7 +339,6 @@ header {
 }
 .product-image img {
     width: 100%;
-    height: 100%;
 }
 .section-title {
     font-weight: 300;
@@ -364,6 +361,7 @@ header {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: var(--black);
 }
 .promotion {
     color: var(--secondary-color);
@@ -375,7 +373,6 @@ header {
     position: relative;
     padding-bottom: 54px;
     padding-top: 48px;
-    margin-bottom: 48px;
     width: 100%;
     background-color: var(--info-color);
 }
@@ -406,7 +403,15 @@ header {
     margin-bottom: 39px;
     text-align: center;
 }
-.section-subcribe {
+;
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19.5px;
+    outline: none;
+}
+footer {
+    position: relative;.section-subcribe {
   position: relative;
   width: 100%;
   height: 200px;
@@ -440,15 +445,7 @@ header {
     width: 70%;
     height: 47px;
     padding: 13px 24px;
-    border-radius: 56px;
-    border: none;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19.5px;
-    outline: none;
-}
-footer {
-    position: relative;
+    border-radius: 56px
     padding-top: 40px;
     width: 100%;
     background-color: var(--primary-color);

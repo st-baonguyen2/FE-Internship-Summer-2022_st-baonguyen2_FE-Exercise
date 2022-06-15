@@ -1,0 +1,29 @@
+.section-title {
+  font-weight: map-get($font-weight, font-normal );
+  font-size:  map-get($font-size, font-4xl );
+  line-height: 48px;
+  color:map-get($color, blackk );
+}
+.logo-title {
+  display: flex;
+  font-size: map-get($color,font-xl );
+  color: map-get($color,whitee );
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+@media all and (max-width:768px){
+  .section-title {
+    font-weight: map-get($font-weight, font-normal );
+    font-size:  18px;
+    line-height: 27px;
+  }
+  .logo-title {
+    font-size: map-get($color,font-md );
+    color: map-get($color,blackk );
+    font-weight: map-get($font-weight, font-bold );
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+  }
+}

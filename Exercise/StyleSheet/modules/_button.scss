@@ -1,0 +1,60 @@
+.btn {
+  border: none;
+  font-size: map-get($font-size ,font-sm);
+  font-weight: map-get($font-weight, font-bold );
+  cursor: pointer;
+  transition: 0.3s;
+
+  &-primary {
+    padding: 14px 18px;
+    border-radius: 33px;
+    background-color: map-get($color,whitee);
+    color: map-get($color,blackk);
+  }
+  &:hover {
+    background-color: map-get($color,primary);
+    color: map-get($color,whitee);
+  }
+  &-secondary {
+    padding: 14px 29px;
+    border-radius: 56px;
+    background-color:map-get($color,primary);
+    color: map-get($color,blackk);
+    &:hover{
+    background-color:map-get($color,whitee);
+    color: map-get($color,blackk);
+    }
+  }
+  &-more{
+    padding: 14px 15px;
+    border-radius: 24px;
+    background-color:map-get($color,whitee );
+    color: map-get($color,blackk )
+  }
+  &-view{
+    padding: 14px 20px;
+    border-radius: 24px;
+    background-color:map-get($color, whitee);
+    color: map-get($color,blackk )
+  }
+  &-show {
+    padding: 14px 30px;
+    border-radius: 39px;
+    border: 1px solid #c4c4c4;
+    background-color:map-get($color, whitee);
+    color: map-get($color,blackk )
+  }
+}
+@media all and (max-width:768px){
+  .btn {
+    font-size: 10px;
+    padding: 3px 10px;
+    &-show {
+      padding:0 30px;
+      border:none;
+      font-weight: map-get($font-weight , font-bold );
+      background-color:map-get($color, whitee);
+      color: map-get($color,blackk )
+    }
+  }
+}
