@@ -70,24 +70,19 @@ header .menu_home {
 @media all and (max-width: 768px) {
   header {
     height: 75px;
+    background-color: #FFFFFF;
   }
   header .header {
-    display: flex;
     padding-top: 20px;
-    justify-content: space-between;
-    align-items: center;
+  }
+  header .header .hover-logo {
+    color: #333333;
   }
   header .header .hover-logo:hover {
     transform: scale(1.2);
   }
   header .header .menu-list {
     display: none;
-  }
-  header .header .menu-list .menu-item a {
-    font-weight: 700;
-    font-size: 19px;
-    color: #FBB03B;
-    line-height: 27px;
   }
   header .header .header-list-icon {
     gap: 24px;
@@ -226,7 +221,6 @@ footer .footer-text {
 @media all and (max-width: 768px) {
   .row {
     margin: 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -315,6 +309,68 @@ footer .footer-text {
     font-weight: 700;
     font-size: 13px;
     line-height: 19.5px;
+  }
+}
+.section-title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+}
+
+.logo-title {
+  display: flex;
+  color: #FFFFFF;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.text-secondary {
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.icon-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  border-radius: 20px;
+  padding: 6px 10px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media all and (max-width: 768px) {
+  .section-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .logo-title {
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+  }
+  .text-secondary {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .badge {
+    padding: 2px 2px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 12px;
+    color: #FFFFFF;
   }
 }
 .home-page .section-banner {
@@ -618,9 +674,6 @@ footer .footer-text {
   .home-page .section-collection {
     padding-bottom: 24px;
   }
-  .home-page .section-collection .collection-item {
-    position: relative;
-  }
   .home-page .section-collection .collection-item:first-child {
     margin-bottom: 8px;
   }
@@ -643,7 +696,6 @@ footer .footer-text {
     left: 16px;
   }
   .home-page .section-collection .collection-item .badge-collection {
-    position: absolute;
     top: 118px;
     left: 16px;
   }
@@ -685,6 +737,7 @@ footer .footer-text {
     color: #FF0000;
   }
   .home-page .product-item .cost-text {
+    font-size: 10px;
     color: #cecece;
   }
   .home-page .section-offer {
@@ -747,78 +800,6 @@ footer .footer-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-  }
-}
-.text-secondary {
-  font-weight: 300;
-  line-height: 21px;
-}
-
-@media all and (max-width: 768px) {
-  .text-secondary {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
-  }
-}
-.badge {
-  border-radius: 20px;
-  padding: 6px 10px;
-  background-color: #FF0000;
-  color: #333333;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-@media all and (max-width: 768px) {
-  .badge {
-    padding: 2px 2px;
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 12px;
-    color: #FFFFFF;
-  }
-}
-.icon-primary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-primary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-title {
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 48px;
-  color: #333333;
-}
-
-.logo-title {
-  display: flex;
-  color: #FFFFFF;
-  align-items: center;
-  gap: 20px;
-  transition: 0.5s;
-}
-
-@media all and (max-width: 768px) {
-  .section-title {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .logo-title {
-    color: #333333;
-    font-weight: 700;
-    align-items: center;
-    gap: 20px;
-    transition: 0.5s;
   }
 }
 

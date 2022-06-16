@@ -1,0 +1,6 @@
+$mobile:768px;
+  @mixin  reponsive_mobile() {
+    @media all and (max-width:$mobile){
+      @content;
+  }
+}

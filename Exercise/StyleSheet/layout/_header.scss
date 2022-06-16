@@ -30,25 +30,20 @@ header {
     display: none;
   }
 }
-@media all and (max-width:768px){
+@include reponsive_mobile{
   header {
    height: 75px;
+   background-color: map-get($color, whitee );
     .header {
-      display: flex;
       padding-top: 20px;
-      justify-content: space-between;
-      align-items: center;
+      .hover-logo{
+        color: map-get($color, blackk );
+      }
       .hover-logo:hover{
         transform: scale(1.2);
       }
       .menu-list {
        display: none;
-        .menu-item a{
-          font-weight: map-get($font-weight,font-bold);
-          font-size: map-get($font-size,font-xl );
-          color: map-get($color,primary );
-          line-height: 27px;
-        } 
       }
       .header-list-icon {
         gap: 24px;

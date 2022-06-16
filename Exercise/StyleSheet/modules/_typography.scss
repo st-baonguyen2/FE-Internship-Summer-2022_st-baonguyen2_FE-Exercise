@@ -1,0 +1,59 @@
+.section-title {
+  font-weight: map-get($font-weight, font-normal );
+  font-size:  map-get($font-size, font-4xl );
+  line-height: 48px;
+  color:map-get($color, blackk );
+}
+.logo-title {
+  display: flex;
+  font-size: map-get($color,font-xl );
+  color: map-get($color,whitee );
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+.text-secondary{
+  font-weight: map-get($font-weight, font-normal );
+  font-size:map-get($font-weight, font-md );
+  line-height: 21px;
+}
+.icon-primary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge {
+  border-radius: 20px;
+  padding: 6px 10px;
+  background-color: map-get($color, secondary );
+  color: map-get($color, whitee );
+  font-weight: map-get($font-weight, font-bold );
+  font-size:map-get($font-size, font-xs );
+  line-height: 18px;
+}
+@include reponsive_mobile{
+  .section-title {
+    font-weight: map-get($font-weight, font-normal );
+    font-size:  18px;
+    line-height: 27px;
+  }
+  .logo-title {
+    font-size: 18px;
+    font-weight: map-get($font-weight, font-bold );
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+  }
+  .text-secondary{
+        font-weight:400;
+        font-size:10px;
+        line-height: 15px
+    };
+    .badge {
+      padding: 2px 2px;
+      font-weight: map-get($font-weight, font-bold );
+      font-size:8px;
+      line-height: 12px;
+      color: map-get($color, whitee );
+    }
+}

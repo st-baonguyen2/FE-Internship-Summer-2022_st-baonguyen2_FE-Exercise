@@ -58,7 +58,7 @@ footer {
   }
 }
 //--------------------------------------reponsive---------------------------------------------
-@media all and (max-width:768px){
+@include reponsive_mobile{
   footer {
   .footer-heading {
     padding: 24px 0;

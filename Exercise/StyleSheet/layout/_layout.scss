@@ -3,7 +3,7 @@
   padding: 0 20px;
   margin: 0 auto;
 }
-@media all and (max-width:768px){
+@include reponsive_mobile{
   .container{
     width: 100%;
   }

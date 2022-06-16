@@ -284,7 +284,7 @@ align-items: center;
 //-------------------------------------------------responsive----------------------------------------------------
 
 
-@media all and (max-width:768px){
+@include reponsive_mobile{
   .home-page{
     .section-banner {
       height: 740px;
@@ -319,7 +319,6 @@ align-items: center;
           &:first-child{
             margin-bottom: 8px;
           }
-          position: relative;
           .collection-image {
            display: flex;
           }
@@ -339,7 +338,6 @@ align-items: center;
             left: 16px;
           }
           .badge-collection {
-            position: absolute;
             top: 118px;
             left: 16px;  
           }
@@ -385,6 +383,7 @@ align-items: center;
       color:map-get($color, secondary );
     }
     .cost-text {
+      font-size: 10px;
       color:map-get($color, light );
     }
   }

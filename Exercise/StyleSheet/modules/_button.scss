@@ -45,7 +45,7 @@
     color: map-get($color,blackk )
   }
 }
-@media all and (max-width:768px){
+@include reponsive_mobile{
   .btn {
     font-size: 10px;
     padding: 3px 10px;
