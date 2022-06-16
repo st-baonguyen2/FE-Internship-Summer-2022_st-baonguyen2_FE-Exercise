@@ -1,6 +1,4 @@
 footer {
-  position: relative;
-  width: 100%;
   background-color: map-get($color,primary);
   .footer-heading {
     padding: 40px 0;
@@ -11,7 +9,7 @@ footer {
   .footer-text{
     width: 80% ;
     margin-bottom: 57px;
-    color:  map-get($color,whitee );
+    color:  map-get($color,warning );
   }
   
 }
@@ -21,40 +19,33 @@ footer {
   .link-item {
     width: 18px;
     height: 14px;
-    color:  map-get($color,whitee );
+    color:  map-get($color,warning);
   }
 } 
 .footer-list {
   display: flex;
   justify-content: space-between;
   .item-title {
-    margin-bottom: 19px;
-    font-weight: map-get($font-weight ,font-bold );
-    font-size: map-get($font-size, font-lg );
+    font-weight: map-get($font-weight ,bold );
+    font-size: map-get($font-size, lg );
     line-height: 24px;
-    & a {
-      color: map-get($color,whitee );
-    }
+    color: map-get($color,warning );
   }
-  .link-text {
-    margin-bottom: 20px;
-    & a {
-      color:map-get($color,whitee );
-    }
+  .group-text {
+      color:map-get($color,warning );
+    
   }
 }
-.footer {
-  display: flex;
-  height: 70px;
-  align-items: center;
-  border-top: 1px solid map-get($color,whitee );
+.footer-copyright {
+  padding: 24px 0;
+  border-top: 1px solid map-get($color,warning );
   .copy-right {
     display: flex;
-    font-weight: map-get($font-weight ,font-light );
-    font-size: map-get($font-size, font-xs );
+    font-weight: map-get($font-weight ,light );
+    font-size: map-get($font-size,xs );
     line-height: 18px;
     justify-content: center;
-    color: map-get($color,whitee );
+    color: map-get($color,warning );
   }
 }
 //--------------------------------------reponsive---------------------------------------------
@@ -83,22 +74,21 @@ footer {
   padding-bottom: 24px;
   .item-title {
     margin-bottom: 16px;
-    font-weight: map-get($font-weight ,font-bold );
-    font-size: map-get($font-size, font-lg );
+    font-weight: map-get($font-weight ,bold );
+    font-size: map-get($font-size,lg );
     line-height: 24px;
   }
-  .link-text {
+  .group-text {
     margin-bottom: 12px;
     & a {
-      font-weight: map-get($font-weight ,font-light );
-      font-size: map-get($font-size, font-xs );
+      font-weight: map-get($font-weight ,light );
+      font-size: map-get($font-size, xs );
       line-height: 18px;
     }
   }
 }
-.footer {
+.footer-copyright {
   padding: 24px 0;
   height: 0;
-  
 }
 }

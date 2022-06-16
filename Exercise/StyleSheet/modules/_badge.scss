@@ -1,0 +1,18 @@
+.badge {
+  border-radius: 20px;
+  padding: 6px 10px;
+  background-color: map-get($color, secondary );
+  color: map-get($color, warning );
+  font-weight: map-get($font-weight, bold );
+  font-size:map-get($font-size, xs );
+  line-height: 18px;
+}
+@include reponsive_mobile(){
+  .badge {
+    padding: 2px 2px;
+    font-weight: map-get($font-weight, bold );
+    font-size:8px;
+    line-height: 12px;
+    color: map-get($color, warning );
+  }
+}

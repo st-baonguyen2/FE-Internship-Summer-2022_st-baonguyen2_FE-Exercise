@@ -1,48 +1,48 @@
 .btn {
   border: none;
-  font-size: map-get($font-size ,font-sm);
-  font-weight: map-get($font-weight, font-bold );
+  font-size: map-get($font-size ,sm);
+  font-weight: map-get($font-weight, bold );
   cursor: pointer;
   transition: 0.3s;
 
   &-primary {
     padding: 14px 18px;
     border-radius: 33px;
-    background-color: map-get($color,whitee);
-    color: map-get($color,blackk);
+    background-color: map-get($color,warning);
+    color: map-get($color,danger);
   }
   &:hover {
     background-color: map-get($color,primary);
-    color: map-get($color,whitee);
+    color: map-get($color,warning);
   }
   &-secondary {
     padding: 14px 29px;
     border-radius: 56px;
     background-color:map-get($color,primary);
-    color: map-get($color,blackk);
+    color: map-get($color,danger);
     &:hover{
-    background-color:map-get($color,whitee);
-    color: map-get($color,blackk);
+    background-color:map-get($color,warning);
+    color: map-get($color,danger);
     }
   }
   &-more{
     padding: 14px 15px;
     border-radius: 24px;
-    background-color:map-get($color,whitee );
-    color: map-get($color,blackk )
+    background-color:map-get($color,warning );
+    color: map-get($color,danger )
   }
   &-view{
     padding: 14px 20px;
     border-radius: 24px;
-    background-color:map-get($color, whitee);
-    color: map-get($color,blackk )
+    background-color:map-get($color, warning);
+    color: map-get($color,danger )
   }
   &-show {
     padding: 14px 30px;
     border-radius: 39px;
     border: 1px solid #c4c4c4;
-    background-color:map-get($color, whitee);
-    color: map-get($color,blackk )
+    background-color:map-get($color, warning);
+    color: map-get($color,danger )
   }
 }
 @include reponsive_mobile{
@@ -52,14 +52,14 @@
     &-show {
       padding:0 30px;
       border:none;
-      font-weight: map-get($font-weight , font-bold );
-      background-color:map-get($color, whitee);
-      color: map-get($color,blackk )
+      font-weight: map-get($font-weight , bold );
+      background-color:map-get($color, warning);
+      color: map-get($color,danger )
     }
     &-secondary{
       padding: 7px 18px;
-      font-weight: map-get($font-weight , font-bold );
-      font-size: map-get($font-size, font-sm );
+      font-weight: map-get($font-weight ,bold );
+      font-size: map-get($font-size,sm );
       line-height: 19.5px;
     }
   }

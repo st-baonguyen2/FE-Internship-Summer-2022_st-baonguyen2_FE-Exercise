@@ -6,28 +6,28 @@ $color : (
   promotion:#A8A8A8,
   light:#cecece,
   dark:#808080,
-  blackk:#333333,
-  whitee:#FFFFFF,
+  danger:#333333,
+  warning:#FFFFFF,
 );
 
 $font-family:"Poppins", sans-serif;
 
 $font-size : (
-  font-xs:12px,
-  font-sm:13px,
-  font-md:14px,
-  font-lg:16px,
-  font-llg:18px,
-  font-xl:19px,
-  font-xxl:20px,
-  font-3xl:24px,
-  font-4xl:32px,
-  font-5xl:72px
+  xs:12px,
+  sm:13px,
+  md:14px,
+  lg:16px,
+  llg:18px,
+  xl:19px,
+  xxl:20px,
+  3xl:24px,
+  4xl:32px,
+  5xl:72px
 );
 
 $font-weight : (
-  font-normal:300,
-  font-light:400,
-  font-bold:700
+  normal:300,
+  light:400,
+  bold:700
 )
 

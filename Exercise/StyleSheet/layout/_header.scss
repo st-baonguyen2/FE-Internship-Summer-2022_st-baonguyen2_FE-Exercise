@@ -16,9 +16,9 @@ header {
   .menu-list {
     display: flex;
     gap: 100px;
-    .menu-item a{
-      font-weight: map-get($font-weight,font-bold);
-      font-size: map-get($font-size,font-xl );
+    .menu-text {
+      font-weight: map-get($font-weight,bold);
+      font-size: map-get($font-size,xl );
       color: map-get($color,primary );
       line-height: 27px;
     } 
@@ -26,20 +26,21 @@ header {
   .header-list-icon {
     gap: 24px;
   }
-  .menu_home{
+
+}
+.moblie {
     display: none;
   }
-}
-@include reponsive_mobile{
+@include reponsive_mobile {
   header {
    height: 75px;
-   background-color: map-get($color, whitee );
+   background-color: map-get($color, warning);
     .header {
       padding-top: 20px;
       .hover-logo{
-        color: map-get($color, blackk );
+        color: map-get($color, danger);
       }
-      .hover-logo:hover{
+      .hover-logo:hover {
         transform: scale(1.2);
       }
       .menu-list {
@@ -48,11 +49,11 @@ header {
       .header-list-icon {
         gap: 24px;
       }
-      .header-item-icon:nth-child(3){
-        display: none;
-      }
-      .menu_home{
+      .mobile {
         display: flex;
+      }
+      .pc {
+        display: none;
       }
     }
   }
