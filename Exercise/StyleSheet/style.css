@@ -38,6 +38,14 @@ a {
   margin-bottom: 20px;
 }
 
+.mg-39 {
+  margin-bottom: 39px;
+}
+
+.pd-48 {
+  padding: 48px 0;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -432,7 +440,7 @@ footer .footer-text {
 }
 .home-page .policy {
   position: absolute;
-  padding: 15px;
+  padding: 16px;
   width: 75%;
   top: 675px;
   left: 0;
@@ -445,7 +453,7 @@ footer .footer-text {
   padding-top: 38px;
   padding-right: 38px;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 27px;
 }
 .home-page .policy-item {
   display: flex;
