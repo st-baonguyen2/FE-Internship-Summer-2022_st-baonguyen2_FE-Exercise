@@ -194,6 +194,21 @@ align-items: center;
   .cost-text {
     color:map-get($color, light );
   }
+  .addToCart{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    .btn-cart{
+      padding:10px 20px;
+      border: none;
+      border-radius: 40px;
+      font-size: map-get($font-size, xs );
+      font-weight: map-get($font-weight,bold);
+      color: map-get($color,warning );
+      background-color: map-get($color, primary);
+      cursor: pointer;
+    }
+  }
 }
 //-------------------------section-offer------------//
 .section-offer {
@@ -347,6 +362,9 @@ align-items: center;
       margin-bottom: 4px;
       img {
         width: 100%;
+      }
+      &:hover .btn-cart{
+        bottom: 50px;
       }
     }
     .badge-promotion {

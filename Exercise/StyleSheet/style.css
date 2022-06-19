@@ -94,6 +94,15 @@ header .menu-list .menu-text {
 header .header-list-icon {
   gap: 24px;
 }
+header .header-list-icon .cart-count {
+  position: absolute;
+  top: 50px;
+  right: 225px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  color: #333333;
+}
 
 .moblie {
   display: none;
@@ -646,6 +655,21 @@ h1, h2, h3, h4, h5, h6 p {
 .home-page .product-item .cost-text {
   color: #cecece;
 }
+.home-page .product-item .addToCart {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+.home-page .product-item .addToCart .btn-cart {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #FBB03B;
+  cursor: pointer;
+}
 .home-page .section-offer {
   position: relative;
   background-color: #F7F7F7;
@@ -781,6 +805,9 @@ h1, h2, h3, h4, h5, h6 p {
   .home-page .product-item .product-image img {
     width: 100%;
   }
+  .home-page .product-item .product-image:hover .btn-cart {
+    bottom: 50px;
+  }
   .home-page .product-item .badge-promotion {
     top: 14px;
     left: 9px;
@@ -867,6 +894,93 @@ h1, h2, h3, h4, h5, h6 p {
     font-size: 12px;
     line-height: 18px;
   }
+}
+.menu-cart {
+  background-color: rebeccapurple;
+}
+
+.cart {
+  display: flex;
+  padding-top: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cart .cart-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+}
+.cart .cart-main {
+  width: 100%;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid;
+  align-items: center;
+}
+
+.product-button {
+  display: flex;
+  align-items: center;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  font-size: 19px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #FBB03B;
+}
+
+.main-img {
+  width: 50px;
+  height: 50px;
+}
+
+.Total {
+  display: flex;
+  float: right;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.Total-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FBB03B;
+  padding-right: 20px;
+}
+
+.Total-price {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.fa-solid {
+  cursor: pointer;
+  padding: 10px;
+  background: cadetblue;
+  border-radius: 10px;
+}
+
+.quantity {
+  align-items: center;
+  gap: 13px;
+  display: flex;
+}
+
+.incart {
+  font-size: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */

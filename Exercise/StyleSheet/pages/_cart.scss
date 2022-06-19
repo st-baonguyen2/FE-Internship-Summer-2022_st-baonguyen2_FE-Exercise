@@ -1,0 +1,77 @@
+.menu-cart{
+  background-color: rebeccapurple;
+}
+.cart{
+display: flex;
+ padding-top: 200px;
+ max-width: 100%;
+ margin: 0 auto;
+  .cart-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    font-size: map-get($font-size, llg );
+  }
+  .cart-main{
+    width: 100%;
+  }
+}
+.product {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid;
+  align-items: center;
+}
+.product-button{
+  display: flex;
+  align-items: center;
+}
+
+.btn-delete{
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  font-size: map-get($font-size ,xl );
+  border-radius: 30px;
+  font-weight: map-get($font-weight , bold );
+  cursor: pointer;
+  color: map-get($color,primary );
+}
+.main-img{
+  width: 50px;
+  height: 50px;
+}
+.Total{
+  display: flex;
+  float: right;
+  align-items: center;
+  padding-top: 20px;
+}
+.Total-title{
+  font-size: map-get($font-size, 3xl );
+  font-weight: map-get($font-weight, bold );
+  color: map-get($color, primary );
+  padding-right: 20px;
+}
+.Total-price{
+  font-size: map-get($font-size, xxl );
+  font-weight: map-get($font-weight, light );
+}
+.fa-solid{
+  cursor: pointer;
+  padding: 10px;
+  background: cadetblue;
+  border-radius: 10px;
+}
+.quantity{
+  align-items: center;
+  gap: 13px;
+  display: flex;
+}
+.incart{
+  font-size: map-get($font-size, xl );
+}
