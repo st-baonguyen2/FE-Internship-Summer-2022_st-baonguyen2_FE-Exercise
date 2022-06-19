@@ -1,0 +1,63 @@
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top:0;
+  z-index: 3;
+  .header {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    .hover-logo:hover{
+      transform: scale(1.2);
+    }
+  }
+  .menu-list {
+    display: flex;
+    gap: 100px;
+    .menu-text {
+      font-weight: map-get($font-weight,bold);
+      font-size: map-get($font-size,xl );
+      color: map-get($color,primary );
+      line-height: 27px;
+    } 
+  }
+  .header-list-icon {
+    gap: 24px;
+  }
+
+}
+.moblie {
+    display: none;
+  }
+@include reponsive_mobile {
+  header {
+   height: 75px;
+   background-color: map-get($color, warning);
+    .header {
+      padding-top: 20px;
+      .hover-logo{
+        color: map-get($color, danger);
+      }
+      .hover-logo:hover {
+        transform: scale(1.2);
+      }
+      .menu-list {
+       display: none;
+      }
+      .header-list-icon {
+        gap: 24px;
+      }
+      .mobile {
+        display: flex;
+      }
+      .pc {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

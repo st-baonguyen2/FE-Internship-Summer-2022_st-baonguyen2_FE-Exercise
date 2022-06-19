@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+html, body, div, span,h1, h2, h3, h4, h5,
+h6, p,a, code,em, img,q, s,small, var,
+b, u, i, center,ul, li,form, label,
+footer, header,menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  font-family: $font-family;
+  line-height: 1.5;
+}
+ul {
+	list-style: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.mg-20{
+  margin-bottom: 20px;
+}
+.mg-39{
+	margin-bottom: 39px;
+}
+.pd-48{
+	padding: 48px 0;
+}
+
+

@@ -90,6 +90,9 @@ html {
   background-color: var(--white);
   color: var(--black);
 }
+.mg-20{
+    margin-bottom: 20px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -146,6 +149,11 @@ header {
     color: var(--primary-color);
     line-height: 27px;
 }
+.logo-name{
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+}
 .hover-logo:hover{
     transform: scale(1.2);
 }
@@ -159,6 +167,9 @@ header {
 }
 .header-list-icon {
     gap: 24px;
+}
+.menu_home{
+    display: none;
 }
 .section-banner {
   position: relative;
@@ -183,7 +194,7 @@ header {
     left: 240px;    
     z-index: 2;
 }
-.banner-title h2 {
+.banner-text{
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 72px;
@@ -239,7 +250,7 @@ header {
 .policy-item:first-child .content-item {
   width: 224px;
 }
-.policy-icon {
+.policy-img {
   width: 36px;
   height: 36px;
   border-radius: 5px;
@@ -447,7 +458,7 @@ header {
     line-height: 19.5px;
     outline: none;
 }
-footer {
+.footer-copyright {
     position: relative;
     padding-top: 40px;
     width: 100%;
@@ -479,10 +490,10 @@ footer {
 .item-title a {
     color: var(--white);
 }
-.link-text {
+.group-text {
     margin-bottom: 20px;
 }
-.link-text a {
+.group-text a {
     color: var(--white);
 }
 .footer {

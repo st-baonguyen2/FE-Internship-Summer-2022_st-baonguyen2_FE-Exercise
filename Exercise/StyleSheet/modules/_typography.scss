@@ -1,0 +1,41 @@
+.section-title {
+  font-weight: map-get($font-weight, normal );
+  font-size:  map-get($font-size, 4xl );
+  line-height: 48px;
+  color:map-get($color, danger );
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+.text-secondary{
+  font-weight: map-get($font-weight, normal );
+  font-size:map-get($font-size, md );
+  line-height: 21px;
+}
+.icon-primary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@include reponsive_mobile{
+  .section-title {
+    font-weight: map-get($font-weight, normal );
+    font-size:  18px;
+    line-height: 27px;
+  }
+  .logo-title {
+    font-size: 18px;
+    font-weight: map-get($font-weight, bold );
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+  }
+  .text-secondary{
+        font-weight:400;
+        font-size:10px;
+        line-height: 15px
+    };
+}

@@ -1,0 +1,5 @@
+.logo-name {
+  font-size: map-get($font-size, xl );
+  font-weight: map-get($font-weight, bold );
+  color: map-get($color, warning );
+}
