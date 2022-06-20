@@ -194,11 +194,11 @@ align-items: center;
   .cost-text {
     color:map-get($color, light );
   }
-  .addToCart{
+  .addToCart {
     position: absolute;
     top: 250px;
     left: 100px;
-    .btn-cart{
+    .btn-cart{  
       padding:10px 20px;
       border: none;
       border-radius: 40px;
@@ -362,9 +362,6 @@ align-items: center;
       margin-bottom: 4px;
       img {
         width: 100%;
-      }
-      &:hover .btn-cart{
-        bottom: 50px;
       }
     }
     .badge-promotion {

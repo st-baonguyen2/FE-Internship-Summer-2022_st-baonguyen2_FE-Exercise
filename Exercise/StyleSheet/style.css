@@ -805,9 +805,6 @@ h1, h2, h3, h4, h5, h6 p {
   .home-page .product-item .product-image img {
     width: 100%;
   }
-  .home-page .product-item .product-image:hover .btn-cart {
-    bottom: 50px;
-  }
   .home-page .product-item .badge-promotion {
     top: 14px;
     left: 9px;
@@ -896,7 +893,8 @@ h1, h2, h3, h4, h5, h6 p {
   }
 }
 .menu-cart {
-  background-color: rebeccapurple;
+  padding-bottom: 45px;
+  background-color: cadetblue;
 }
 
 .cart {
@@ -967,8 +965,8 @@ h1, h2, h3, h4, h5, h6 p {
 }
 
 .fa-solid {
-  cursor: pointer;
   padding: 10px;
+  cursor: pointer;
   background: cadetblue;
   border-radius: 10px;
 }
