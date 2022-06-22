@@ -37,5 +37,18 @@ a {
 .pd-48{
 	padding: 48px 0;
 }
-
+.mg-5{
+	margin-bottom: 5px;
+}
+.mg-24{
+	margin-bottom: 24px;
+}
+@include reponsive_mobile(){
+	.mg-20{
+		margin-bottom: 12px;
+	}
+	.pd-48{
+		padding: 0 0 48px 0;
+	}
+}
 

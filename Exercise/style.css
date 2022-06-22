@@ -90,8 +90,17 @@ html {
   background-color: var(--white);
   color: var(--black);
 }
-.mg-20{
+.mg-20 {
     margin-bottom: 20px;
+}
+.pd-48 {
+    padding:48px 0;
+}
+.mg-39 {
+    margin-bottom: 39px;
+}
+.mg-5 {
+    margin-bottom: 5px;
 }
 .row {
     display: flex;
