@@ -1,1 +1,0 @@
-console.log('day la file xuat typescript')
