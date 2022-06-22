@@ -3,7 +3,8 @@
   background-color: cadetblue;
 }
 .cart {
-display: flex;
+  position: relative;
+  display: flex;
  padding-top: 200px;
  max-width: 100%;
  margin: 0 auto;
@@ -75,4 +76,8 @@ display: flex;
 }
 .incart {
   font-size: map-get($font-size, xl );
+}
+.empty-cart{
+  width: 100%;
+  text-align: center;
 }

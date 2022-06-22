@@ -63,7 +63,7 @@ a {
   }
 }
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
@@ -898,6 +898,7 @@ h1, h2, h3, h4, h5, h6 p {
 }
 
 .cart {
+  position: relative;
   display: flex;
   padding-top: 200px;
   max-width: 100%;
@@ -979,6 +980,11 @@ h1, h2, h3, h4, h5, h6 p {
 
 .incart {
   font-size: 19px;
+}
+
+.empty-cart {
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
