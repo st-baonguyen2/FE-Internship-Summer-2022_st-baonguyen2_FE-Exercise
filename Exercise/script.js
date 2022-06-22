@@ -37,14 +37,14 @@ function setData(data, value) {
 }
 
 function getData(data, value) {
-  value = JSON.parse(localStorage.getItem(data));
+  return value = JSON.parse(localStorage.getItem(data));
 }
 
 function renderUI() {
-  getData('data', products);
+  var product= getData('data', product);
   var Elementli = document.querySelectorAll('.product-list');
   for (var i = 0; i < Elementli.length; i++) {
-    products.forEach(item => {
+    product.forEach(item => {
       if (item.discount != 0) {
         Elementli[i].innerHTML += `
           <li class="product-item col-3">
