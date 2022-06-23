@@ -3,3 +3,13 @@
   font-weight: map-get($font-weight, bold );
   color: map-get($color, warning );
 }
+@include reponsive_mobile() {
+  .logo-name {
+  font-size: map-get($font-size, llg );
+  font-weight: map-get($font-weight, bold );
+  color: map-get($color, danger );
+}
+.logo-name{
+  color:map-get($color, warning );
+}
+}

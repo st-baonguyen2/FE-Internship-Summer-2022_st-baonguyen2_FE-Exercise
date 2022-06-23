@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top:0;
@@ -11,6 +11,9 @@ header {
     align-items: center;
     .hover-logo:hover{
       transform: scale(1.2);
+    }
+    .mobile{
+      display: none;
     }
   }
   .menu-list {
@@ -25,6 +28,15 @@ header {
   }
   .header-list-icon {
     gap: 24px;
+    .cart-count{
+    position: absolute;
+    top: 50px;
+    right: 225px;
+      padding:0 5px;
+      border-radius: 50%;
+      background-color: map-get($color,secondary );
+      color: map-get($color,danger);
+    }
   }
 
 }
@@ -33,13 +45,10 @@ header {
   }
 @include reponsive_mobile {
   header {
-   height: 75px;
+   padding: 0;
    background-color: map-get($color, warning);
     .header {
-      padding-top: 20px;
-      .hover-logo{
-        color: map-get($color, danger);
-      }
+      padding: 26px 0;
       .hover-logo:hover {
         transform: scale(1.2);
       }
@@ -50,7 +59,7 @@ header {
         gap: 24px;
       }
       .mobile {
-        display: flex;
+        display: block;
       }
       .pc {
         display: none;
@@ -58,6 +67,7 @@ header {
     }
   }
 }
+
 
 
 

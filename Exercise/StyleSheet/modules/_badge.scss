@@ -9,7 +9,6 @@
 }
 @include reponsive_mobile(){
   .badge {
-    padding: 2px 2px;
     font-weight: map-get($font-weight, bold );
     font-size:8px;
     line-height: 12px;

@@ -20,18 +20,18 @@
     border-radius: 56px;
     background-color:map-get($color,primary);
     color: map-get($color,danger);
-    &:hover{
+    &:hover {
     background-color:map-get($color,warning);
     color: map-get($color,danger);
     }
   }
-  &-more{
+  &-more {
     padding: 14px 15px;
     border-radius: 24px;
     background-color:map-get($color,warning );
     color: map-get($color,danger )
   }
-  &-view{
+  &-view {
     padding: 14px 20px;
     border-radius: 24px;
     background-color:map-get($color, warning);
@@ -45,7 +45,7 @@
     color: map-get($color,danger )
   }
 }
-@include reponsive_mobile{
+@include reponsive_mobile {
   .btn {
     font-size: 10px;
     padding: 3px 10px;
@@ -56,7 +56,7 @@
       background-color:map-get($color, warning);
       color: map-get($color,danger )
     }
-    &-secondary{
+    &-secondary {
       padding: 7px 18px;
       font-weight: map-get($font-weight ,bold );
       font-size: map-get($font-size,sm );
@@ -64,3 +64,4 @@
     }
   }
 }
+
